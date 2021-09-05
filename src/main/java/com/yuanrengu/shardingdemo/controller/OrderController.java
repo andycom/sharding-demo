@@ -17,7 +17,7 @@ public class OrderController {
 
     @RequestMapping("/add")
     public String add() {
-        for (int i = 1; i < 10; i++) {
+        for (int i = 10; i < 20; i++) {
             Order order = new Order();
             long userId = i;
             long orderId = i;
