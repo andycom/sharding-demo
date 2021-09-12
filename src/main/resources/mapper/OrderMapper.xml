@@ -2,9 +2,9 @@
 <!DOCTYPE mapper
         PUBLIC "-//mybatis.org//DTD Mapper 3.0//EN"
         "http://mybatis.org/dtd/mybatis-3-mapper.dtd">
-<mapper namespace="com.yuanrengu.shardingdemo.mapper.OrderMapper">
+<mapper namespace="com.fancv.shardingdemo.mapper.OrderMapper">
 
-	<select id="getOrderByUserId" resultType="com.yuanrengu.shardingdemo.model.Order">
+	<select id="getOrderByUserId" resultType="com.fancv.shardingdemo.model.Order">
         select
             id,
             user_id as userId,
@@ -15,7 +15,7 @@
         where user_id=#{userId}
 	</select>
 
-    <select id="getOrderByOrderId" resultType="com.yuanrengu.shardingdemo.model.Order">
+    <select id="getOrderByOrderId" resultType="com.fancv.shardingdemo.model.Order">
         select
             id,
             user_id as userId,
@@ -26,7 +26,7 @@
         where order_id=#{orderId}
 	</select>
 
-    <select id="getOrderByUserIdAndOrderId" resultType="com.yuanrengu.shardingdemo.model.Order">
+    <select id="getOrderByUserIdAndOrderId" resultType="com.fancv.shardingdemo.model.Order">
         select
             id,
             user_id as userId,
@@ -37,7 +37,7 @@
         where user_id=#{userId} and order_id=#{orderId}
 	</select>
 
-    <select id="getOrderByRemark" resultType="com.yuanrengu.shardingdemo.model.Order">
+    <select id="getOrderByRemark" resultType="com.fancv.shardingdemo.model.Order">
         select
             id,
             user_id as userId,
@@ -50,7 +50,7 @@
 
 
     <insert id="addOrder"
-            parameterType="com.yuanrengu.shardingdemo.model.Order">
+            parameterType="com.fancv.shardingdemo.model.Order">
 	  insert into t_order(
           user_id,
           order_id,
@@ -68,7 +68,7 @@
 
 
     <insert id="addOrderEncryptor"
-            parameterType="com.yuanrengu.shardingdemo.model.Order">
+            parameterType="com.fancv.shardingdemo.model.Order">
 	  insert into t_order(
           user_id,
           order_id,

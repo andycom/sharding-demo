@@ -1,3 +1,3 @@
-com.yuanrengu.shardingdemo.keygen.SidKeyGenerator
-com.yuanrengu.shardingdemo.keygen.SnowflakeKeyGenerator
-com.yuanrengu.shardingdemo.keygen.UUIDKeyGenerator
+com.fancv.shardingdemo.keygen.SidKeyGenerator
+com.fancv.shardingdemo.keygen.SnowflakeKeyGenerator
+com.fancv.shardingdemo.keygen.UUIDKeyGenerator
